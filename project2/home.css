@@ -25,3 +25,43 @@
 .hero__section img{
     border-radius: var(--radius-4);
 }
+
+
+
+/* <!-- ======================GALLERYSECTION =================================== --> */
+
+.gallery{
+    background: #ffffff;
+}
+
+.gallery__container{
+    padding: 0.5rem;
+}
+
+.upper__gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.lower__gallery{
+    /* display: grid; */
+    gap: 3rem;
+
+}
+.gallery__choices{
+    display: flex;
+    gap: 3rem;
+    margin-top: 4rem;
+}
+
+.gallery__pic{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr );
+    gap: 2rem;
+}
+
+.gallery__details{
+   margin: 4rem 0;
+
+}
