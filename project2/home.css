@@ -1,0 +1,27 @@
+.hero__section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin: 8rem auto;
+    padding-bottom: 4rem ;
+    
+
+}
+.hero{
+    background: linear-gradient(white, #f2f3f4);
+}
+.hero__texts h2{
+    margin-bottom: 1.5rem;
+
+
+}
+.hero__texts p{
+    color: black;
+    margin-bottom: 2rem;
+    font-size:1.2rem ;
+}
+
+
+.hero__section img{
+    border-radius: var(--radius-4);
+}
