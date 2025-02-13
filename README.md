@@ -20,3 +20,4 @@ This is my own personal website for practice. Built on
 |1 |Nav Bar Section | 1-3 |
 |2 |Header Section | 1-4 |
 |3 |About Section |1-3 |
+|4 |Gallery section|1-5 |
