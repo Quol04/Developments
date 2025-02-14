@@ -52,7 +52,32 @@
 .gallery__choices{
     display: flex;
     gap: 3rem;
-    margin-top: 4rem;
+    margin-top: 2.5rem;
+    border-top: 0.2rem solid ;
+    /* align-items: center; */
+}
+
+.gallery__choices a{
+    width: fit-content;
+    padding: 1rem 2rem 0.5rem;
+    margin: 1rem 0 0;
+    border-radius: var(--radius-3);
+    box-shadow: 0 0.4rem 1rem var(--color-green-100);
+    text-transform: uppercase;
+   
+    
+}
+
+.gallery__choices a:hover{
+    box-shadow: none;
+    transition: var(--transition);
+    /* border: 0.1rem solid #000000; */
+    background: #000000;
+    color: #ffffff;
+}
+
+.gallery__choices .active{
+    background: var(--color-primary);
 }
 
 .gallery__pic{
@@ -63,5 +88,7 @@
 
 .gallery__details{
    margin: 4rem 0;
+   padding: 1rem 0;
+   box-shadow: 0 0.7rem o var(--color-green-100);
 
 }
