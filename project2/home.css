@@ -28,7 +28,7 @@
 
 
 
-/* <!-- ======================GALLERYSECTION =================================== --> */
+/* <!-- ======================GALLERY SECTION =================================== --> */
 
 .gallery{
     background: #ffffff;
@@ -130,4 +130,36 @@
 .gallery__details p{
     margin-top: 1rem;
     padding: 0 2rem;
+}
+
+
+
+
+/* <!-- ======================GALLERY SECTION =================================== --> */
+
+
+
+.community{
+    margin: 5rem 0 ;
+    background: rgb(235, 247, 244);
+
+}
+
+.join__us{
+    background: url(./images/med9.jpg) center center/cover;
+    margin: 3rem 0;
+    height: 15rem;
+    opacity: 0.9;
+}
+
+.join__us p{
+    color: #ffffff;
+    margin: 0.5rem 0;
+    margin-bottom: 3rem;
+}
+
+.join__us h2{
+    padding-top: 1rem ;
+    color: #ffffff;
+    margin: 0.5rem 0;
 }
