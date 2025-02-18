@@ -1,0 +1,292 @@
+<!-- /** @jsxImportSource https://esm.sh/react@18.2.0 */
+import React, { useState, useEffect } from "https://esm.sh/react@18.2.0";
+import { createRoot } from "https://esm.sh/react-dom@18.2.0/client";
+
+// Expense interface for type safety
+interface Expense {
+  id?: number;
+  date: string;
+  category: string;
+  amount: number;
+  description: string;
+}
+
+function ExpenseTracker() {
+  const [expenses, setExpenses] = useState<Expense[]>([]);
+  const [newExpense, setNewExpense] = useState<Expense>({
+    date: new Date().toISOString().split('T')[0],
+    category: '',
+    amount: 0,
+    description: ''
+  });
+  const [totalBalance, setTotalBalance] = useState(0);
+  const [categories, setCategories] = useState([
+    'Food', 'Transportation', 'Entertainment', 
+    'Utilities', 'Shopping', 'Other'
+  ]);
+
+  // Fetch expenses on component mount
+  useEffect(() => {
+    fetchExpenses();
+  }, []);
+
+  // Calculate total balance whenever expenses change
+  useEffect(() => {
+    const balance = expenses.reduce((total, expense) => total - expense.amount, 1000);
+    setTotalBalance(balance);
+  }, [expenses]);
+
+  async function fetchExpenses() {
+    try {
+      const response = await fetch('/expenses');
+      const fetchedExpenses = await response.json();
+      setExpenses(fetchedExpenses);
+    } catch (error) {
+      console.error('Failed to fetch expenses', error);
+    }
+  }
+
+  function handleInputChange(e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) {
+    const { name, value } = e.target;
+    setNewExpense(prev => ({
+      ...prev,
+      [name]: name === 'amount' ? Number(value) : value
+    }));
+  }
+
+  async function addExpense(e: React.FormEvent) {
+    e.preventDefault();
+    try {
+      const response = await fetch('/add-expense', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(newExpense)
+      });
+      
+      if (response.ok) {
+        fetchExpenses();
+        // Reset form
+        setNewExpense({
+          date: new Date().toISOString().split('T')[0],
+          category: '',
+          amount: 0,
+          description: ''
+        });
+      }
+    } catch (error) {
+      console.error('Failed to add expense', error);
+    }
+  }
+
+  // Categorize expenses
+  const categorizedExpenses = expenses.reduce((acc, expense) => {
+    if (!acc[expense.category]) {
+      acc[expense.category] = [];
+    }
+    acc[expense.category].push(expense);
+    return acc;
+  }, {} as Record<string, Expense[]>);
+
+  return (
+    <div style={styles.container}>
+      <h1>💰 Expense Tracker</h1>
+      
+      <div style={styles.balanceCard}>
+        <h2>Current Balance</h2>
+        <p style={totalBalance > 500 ? styles.positiveBalance : styles.negativeBalance}>
+          ${totalBalance.toFixed(2)}
+        </p>
+      </div>
+
+      <form onSubmit={addExpense} style={styles.expenseForm}>
+        <input
+          type="date"
+          name="date"
+          value={newExpense.date}
+          onChange={handleInputChange}
+          required
+        />
+        <select
+          name="category"
+          value={newExpense.category}
+          onChange={handleInputChange}
+          required
+        >
+          <option value="">Select Category</option>
+          {categories.map(cat => (
+            <option key={cat} value={cat}>{cat}</option>
+          ))}
+        </select>
+        <input
+          type="number"
+          name="amount"
+          placeholder="Amount"
+          value={newExpense.amount || ''}
+          onChange={handleInputChange}
+          min="0"
+          step="0.01"
+          required
+        />
+        <input
+          type="text"
+          name="description"
+          placeholder="Description"
+          value={newExpense.description}
+          onChange={handleInputChange}
+          required
+        />
+        <button type="submit">Add Expense</button>
+      </form>
+
+      <div style={styles.expenseList}>
+        <h2>Expense Breakdown</h2>
+        {Object.entries(categorizedExpenses).map(([category, categoryExpenses]) => (
+          <div key={category} style={styles.categorySection}>
+            <h3>{category}</h3>
+            {categoryExpenses.map(expense => (
+              <div key={expense.id} style={styles.expenseItem}>
+                <span>{expense.date}</span>
+                <span>{expense.description}</span>
+                <span>${expense.amount.toFixed(2)}</span>
+              </div>
+            ))}
+            <p>
+              Total: ${categoryExpenses.reduce((sum, exp) => sum + exp.amount, 0).toFixed(2)}
+            </p>
+          </div>
+        ))}
+      </div>
+
+      <a 
+        href={import.meta.url.replace("esm.town", "val.town")} 
+        target="_top" 
+        style={styles.sourceLink}
+      >
+        View Source
+      </a>
+    </div>
+  );
+}
+
+const styles = {
+  container: {
+    fontFamily: 'Arial, sans-serif',
+    maxWidth: '600px',
+    margin: '0 auto',
+    padding: '20px',
+    backgroundColor: '#f0f0f0'
+  },
+  balanceCard: {
+    backgroundColor: 'white',
+    borderRadius: '10px',
+    padding: '15px',
+    textAlign: 'center',
+    marginBottom: '20px',
+    boxShadow: '0 4px 6px rgba(0,0,0,0.1)'
+  },
+  positiveBalance: {
+    color: 'green',
+    fontSize: '24px',
+    fontWeight: 'bold'
+  },
+  negativeBalance: {
+    color: 'red',
+    fontSize: '24px',
+    fontWeight: 'bold'
+  },
+  expenseForm: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '10px',
+    marginBottom: '20px'
+  },
+  expenseList: {
+    backgroundColor: 'white',
+    borderRadius: '10px',
+    padding: '15px'
+  },
+  categorySection: {
+    marginBottom: '15px',
+    borderBottom: '1px solid #eee'
+  },
+  expenseItem: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    padding: '5px 0'
+  },
+  sourceLink: {
+    display: 'block',
+    marginTop: '20px',
+    color: '#666',
+    textDecoration: 'none',
+    textAlign: 'center'
+  }
+};
+
+function client() {
+  createRoot(document.getElementById("root")).render(<ExpenseTracker />);
+}
+if (typeof document !== "undefined") { client(); }
+
+export default async function server(request: Request): Promise<Response> {
+  // Dynamic import of SQLite to avoid browser-side issues
+  const { sqlite } = await import("https://esm.town/v/stevekrouse/sqlite");
+  const KEY = new URL(import.meta.url).pathname.split("/").at(-1);
+  const SCHEMA_VERSION = 1;
+
+  // Ensure table exists
+  await sqlite.execute(`
+    CREATE TABLE IF NOT EXISTS ${KEY}_expenses_${SCHEMA_VERSION} (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      date TEXT NOT NULL,
+      category TEXT NOT NULL,
+      amount REAL NOT NULL,
+      description TEXT NOT NULL
+    )
+  `);
+
+  // Handle different routes
+  if (request.method === 'GET' && new URL(request.url).pathname === '/expenses') {
+    const result = await sqlite.execute(`
+      SELECT * FROM ${KEY}_expenses_${SCHEMA_VERSION} 
+      ORDER BY date DESC
+    `);
+    return new Response(JSON.stringify(result.rows), {
+      headers: { 'Content-Type': 'application/json' }
+    });
+  }
+
+  if (request.method === 'POST' && new URL(request.url).pathname === '/add-expense') {
+    const expense = await request.json();
+    await sqlite.execute(`
+      INSERT INTO ${KEY}_expenses_${SCHEMA_VERSION} 
+      (date, category, amount, description) 
+      VALUES (?, ?, ?, ?)
+    `, [expense.date, expense.category, expense.amount, expense.description]);
+    
+    return new Response(JSON.stringify({ success: true }), {
+      headers: { 'Content-Type': 'application/json' }
+    });
+  }
+
+  // Main page render
+  return new Response(`
+    <html>
+      <head>
+        <title>Expense Tracker</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      </head>
+      <body>
+        <div id="root"></div>
+        <script src="https://esm.town/v/std/catch"></script>
+        <script type="module" src="${import.meta.url}"></script>
+      </body>
+    </html>
+  `, {
+    headers: {
+      "content-type": "text/html",
+    },
+  });
+} -->
