@@ -6,6 +6,8 @@
     <title>Aseefa Hospital</title>
 
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="home.css">
@@ -225,6 +227,54 @@
 
 <!-- ======================COMMUNITY SECTION =================================== -->
 
+
+
+
+
+
+ <!-- ======================Footer Section =================================== -->
+ <footer>
+    <div class="container footer__container">
+        <menu class="footer__menu">
+            <a href="#">Privacy</a>
+            <a href="#"> Terms and Conditions</a>
+            <a href="#">Other Interets</a>
+        </menu>
+        <menu class="footer__socials">
+            <a href="#" target="_blank"><i class="uil uil-facebook-f"></i></a>
+            <a href="#" target="_blank"><i class="uil uil-facebook-messenger"></i></a>
+            <a href="#" target="_blank"><i class="uil uil-instagram"></i></a>
+            <a href="#" target="_blank"><i class="uil uil-twitter"></i></a>
+            <a href="#" target="_blank"><i class="uil uil-linkedin"></i></a>
+        </menu>
+    </div>
+    <small class="footer__copyright">
+        &copy;2025 ASEEFA. All Rights Reserved.
+    </small>
+</footer>
+
+
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+
+   <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        clickable:true
+      },
+      slidePerView:1,
+      spaceBetween:50,
+      breakpoints: {
+        599:{
+            slidePerView: 3
+        }
+      }
+    });
+  </script>
 
     <script src="home.js"></script>
 </body>
