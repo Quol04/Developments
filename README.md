@@ -1,9 +1,9 @@
 # Aseefa Hospital Website
 
-This is my personal website for practice. Built on,
+This is my website for practice. Built on,
 
 #### 10/02/2025.
-and I am still working on it.
+and I am still working on it. It has four folders for now 
 
 ## Author
 
