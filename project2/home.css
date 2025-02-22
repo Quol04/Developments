@@ -168,6 +168,20 @@
 
 
 
+/* <!-- ======================FAQS SECTION =================================== --> */
+
+.container__faqs{
+    width: 80%;
+}
+
+.questions{
+    /* display: flex; */
+    /* align-items: center; */
+    justify-content: center;
+
+}
+
+
 
 
 
