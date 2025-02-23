@@ -221,7 +221,12 @@
     border: 2px solid grey;
     padding: 1rem;
     border-radius: 2rem;
+    cursor: pointer;
 
+}
+
+.questions p{
+    display: none;
 }
 
 
