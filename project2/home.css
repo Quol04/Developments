@@ -227,6 +227,9 @@
 
 .questions p{
     display: none;
+    border-top: 1px solid ;
+    padding-top: 0.5rem;
+
 }
 
 
