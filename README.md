@@ -10,11 +10,11 @@ and I am still working on it. It has four folders for now.
 **Author:**
 [Quol Peter](https://github.com/quol04)
 
-## Resources to use
+## Resources to use:
 
 [images](./images/logo.png)
 
-## Useful Links
+## Useful Links for Nav
 
 | Week | Topic | Milestone |
 
