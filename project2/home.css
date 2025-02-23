@@ -164,20 +164,63 @@
     margin: 0.5rem 0;
 }
 
+.community__talks{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 2rem;
+    padding-bottom: 2rem;
+
+}
+
+.reviews{
+    border: 1px solid grey;
+    padding: 1rem;
+    border-radius: 2rem;
+   
+
+}
+
+
+
+
+
+/* <!-- ======================HEALTHCARE SECTION =================================== --> */
+
+
+.container__healthcare{
+    margin-top: 2rem ;
+
+}
+
+.health__top{
+    padding: 2rem 0;
+}
 
 
 
 
 /* <!-- ======================FAQS SECTION =================================== --> */
+.faqs{
+    background:#ebf7f4 ;
+    margin: 5rem 0;
+    
+}
+
+
 
 .container__faqs{
     width: 80%;
+    
 }
 
 .questions{
     /* display: flex; */
     /* align-items: center; */
-    justify-content: center;
+    /* justify-content: center; */
+    margin: 1rem 0;
+    border: 2px solid grey;
+    padding: 1rem;
+    border-radius: 2rem;
 
 }
 
@@ -194,12 +237,13 @@
 /* ==============FOOTER============================ */
 footer{
     border-top: 0.5rem solid #ebf7f4;
-    background: #ebf7f4;
+    background: #424a47;
+    
 
 }
 
 footer *{
-    color: var(--color-green-900);
+    color: #ffffff;
 }
 .footer__container{
     padding: 5rem 0 3rem;
