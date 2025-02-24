@@ -22,3 +22,4 @@ and I am still working on it. It has four folders for now.
 |2 |Header Section | 1-4 |
 |3 |About Section |1-3 |
 |4 |Gallery section|1-5 |
+|5 | Community | 5 |
