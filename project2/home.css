@@ -2,13 +2,14 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
-    margin: 8rem auto;
+    margin: 8rem auto 0;
     padding-bottom: 4rem ;
     
 
 }
 .hero{
-    background: linear-gradient(white, #f2f3f4);
+    background: linear-gradient(white,#ebf7f4 );
+    /* background:#ebf7f4 ; */
 }
 .hero__texts h2{
     margin-bottom: 1.5rem;
@@ -95,7 +96,7 @@
 .gallery__pic{
     display: grid;
     grid-template-columns: repeat(3 ,1fr );
-    gap: 3rem;
+    gap: 2rem 3rem;
     
 }
 
@@ -117,7 +118,6 @@
 .gallery__details img{
     height: 18rem;
     border-radius: 4rem;
-    /* box-shadow: 0 1.5rem 0 var(--color-primary) ; */
     overflow: hidden;
    
 }
@@ -140,7 +140,7 @@
 
 
 .community{
-    margin: 5rem 0 ;
+    margin: 5rem 0 0 ;
     background: #ebf7f4;
 
 }
@@ -161,23 +161,78 @@
 .join__us h2{
     padding-top: 1rem ;
     color: #ffffff;
-    margin: 0.5rem 0;
+    
 }
 
+.community__talks{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 2rem;
+    padding-bottom: 2rem;
+
+}
+
+.reviews{
+    border: 1px solid grey;
+    padding: 1rem;
+    border-radius: 2rem;
+    box-shadow: 0 1rem 0 rgba(9, 103, 58, 0.4);
+    cursor: pointer;
+
+}
+
+.reviews:hover {
+    box-shadow: none;
+}
+
+
+
+
+/* <!-- ======================HEALTHCARE SECTION =================================== --> */
+
+
+.container__healthcare{
+    margin-top: 2rem ;
+
+}
+
+.health__top{
+    padding: 2rem 0;
+}
 
 
 
 
 /* <!-- ======================FAQS SECTION =================================== --> */
+.faqs{
+    background:#ebf7f4 ;
+    margin: 5rem 0;
+    
+}
+
+
 
 .container__faqs{
     width: 80%;
+    
 }
 
 .questions{
     /* display: flex; */
     /* align-items: center; */
-    justify-content: center;
+    /* justify-content: center; */
+    margin: 1rem 0;
+    border: 2px solid grey;
+    padding: 1rem;
+    border-radius: 2rem;
+    cursor: pointer;
+
+}
+
+.questions p{
+    display: none;
+    border-top: 1px solid ;
+    padding-top: 0.5rem;
 
 }
 
@@ -194,12 +249,13 @@
 /* ==============FOOTER============================ */
 footer{
     border-top: 0.5rem solid #ebf7f4;
-    background: #ebf7f4;
+    background: #424a47;
+    
 
 }
 
 footer *{
-    color: var(--color-green-900);
+    color: #ffffff;
 }
 .footer__container{
     padding: 5rem 0 3rem;

@@ -5,16 +5,16 @@ This is my website for practice. Built on,
 #### 10/02/2025.
 and I am still working on it. It has four folders for now.
 
-## Author
+## Authored By:
 
 **Author:**
 [Quol Peter](https://github.com/quol04)
 
-## Resources
+## Resources to use:
 
 [images](./images/logo.png)
 
-## Useful Links
+## Useful Links for Navigations
 
 | Week | Topic | Milestone |
 
