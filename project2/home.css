@@ -192,12 +192,12 @@
 
 
 .container__healthcare{
-    margin-top: 2rem ;
+    margin-top: 4rem ;
 
 }
 
-.health__top{
-    padding: 2rem 0;
+.health__top p{
+    padding: 1.5rem 0;
 }
 
 .health__bottom img{
@@ -223,6 +223,13 @@
     
 }
 
+.container__faqs h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1.5rem;
+}
+
 .questions{
     /* display: flex; */
     /* align-items: center; */
@@ -236,7 +243,7 @@
 }
 
 .questions p{
-    display: none;
+    /* display: none; */
     border-top: 1px solid ;
     padding-top: 0.5rem;
 
@@ -297,4 +304,52 @@ footer *{
     display: block;
     padding: 1.5rem;
     border-top: 4px solid var(--color-green-900);
+}
+
+
+
+
+
+
+
+
+
+
+/* ==============MEDIA QUERIES AND SCREEN ============================ */
+
+@media screen and (max-width :450px){
+    .container {
+        width: var(--container-w-md);
+        margin-inline: auto;
+    }
+
+    .hero__section{
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+    .gallery{
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+    .gallery__container{
+        /* display: grid;
+        grid-template-columns: 1fr ; */
+        padding: 0;
+    }
+    .upper__gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0;
+        /* align-items: center; */
+        justify-content: space-between;
+       
+    }
+    .gallery__pic {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .gallery__details{
+        height: auto;
+    }
 }
