@@ -200,13 +200,19 @@
     padding: 2rem 0;
 }
 
+.health__bottom img{
+    border-radius: 4rem;
+
+}
+
 
 
 
 /* <!-- ======================FAQS SECTION =================================== --> */
 .faqs{
     background:#ebf7f4 ;
-    margin: 5rem 0;
+    margin: 5rem 0 0;
+    padding-bottom: 1rem;
     
 }
 
