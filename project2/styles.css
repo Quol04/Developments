@@ -185,6 +185,10 @@ nav{
     padding: 0.9rem;
 
 }
+.menu__bars{
+    display: none;
+
+}
 
 .register a:nth-child(1){
     background: #000000;
