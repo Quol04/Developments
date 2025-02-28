@@ -185,8 +185,10 @@ nav{
     padding: 0.9rem;
 
 }
-.menu__bars{
+.menu__bars button{
     display: none;
+    font-size: 2rem;
+    color: #000000;
 
 }
 
@@ -271,8 +273,22 @@ footer *{
 /* ==============MEDIA QUERIES AND SCREEN ============================ */
 
 @media screen and (max-width :450px){
-    .nav__content{
+    .nav__menu{
         display: none;
     }
+    .register{
+        display: none;
+    }
+   
+    .menu__bars button {
+        display: inline-block;
+    }
+    .menu__bars .uil uil-times ::before{
+        display: none;
+
+    } 
+
+
+
 
 }
