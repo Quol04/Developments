@@ -42,7 +42,6 @@
 }
 body{
     font-family: 'Times New Roman', Times, serif;
-    /* color: var(--color-green-600); */
     background: var(--color-green-0);
     font-weight: 500;
     line-height: 1.6;
