@@ -295,5 +295,10 @@ footer *{
 /* ==============MEDIA QUERIES AND SCREEN ============================ */
 
 @media screen and (max-width :800px){
+    .gallery__choices a{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
 
 }
