@@ -285,9 +285,15 @@ footer *{
     .menu__bars .uil uil-times ::before{
         display: none;
 
-    } 
+    }
+
+
+}
 
 
 
+/* ==============MEDIA QUERIES AND SCREEN ============================ */
+
+@media screen and (max-width :800px){
 
 }
