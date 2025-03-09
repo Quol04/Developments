@@ -262,6 +262,68 @@
 
 
 
+/* ==============MEDIA QUERIES AND SCREEN ============================ */
+
+@media screen and (max-width :910px){
+    h1{
+        font-size: 1.8rem;
+    }
+    h2{
+        font-size: 1.4rem;
+    }
+    h3{
+        font-size: 0.8rem;
+    }
+    
+    .container {
+        width: var(--container-w-md);
+        margin-inline: auto;
+    }
+
+    .hero__section{
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+    /* .gallery{
+        display: grid;
+        grid-template-columns: 1fr ;
+    } */
+    .gallery__container{
+        /* display: grid;
+        grid-template-columns: 1fr ; */
+        padding: 0;
+    }
+    .upper__gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0;
+        /* align-items: center; */
+        justify-content: space-between;
+       
+    }
+    .gallery__pic {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .gallery__choices{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem;
+        margin-top: 0;
+
+    }
+    .gallery__choices a{
+        display: flex;
+        align-items: center;
+        padding: 0.5rem 1rem 0.5rem;
+        margin: 0.5rem 0 ;
+        width: auto;
+    }
+}
+
+
+
 
 /* ==============MEDIA QUERIES AND SCREEN ============================ */
 
@@ -286,10 +348,10 @@
         display: grid;
         grid-template-columns: 1fr ;
     }
-    .gallery{
+    /* .gallery{
         display: grid;
         grid-template-columns: 1fr ;
-    }
+    } */
     .gallery__container{
         /* display: grid;
         grid-template-columns: 1fr ; */
@@ -308,7 +370,18 @@
         grid-template-columns: 1fr;
         gap: 0;
     }
-    .gallery__details{
-        height: auto;
+    .gallery__choices{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem;
+        margin-top: 0;
+
+    }
+    .gallery__choices a{
+        display: flex;
+        align-items: center;
+        padding: 0.5rem 1rem 0.5rem;
+        margin: 0.5rem 0 ;
+        width: auto;
     }
 }
