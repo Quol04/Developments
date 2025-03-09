@@ -269,6 +269,46 @@ footer *{
 
 
 
+
+
+
+/* ==============MEDIA QUERIES AND SCREEN ============================ */
+
+@media screen and (max-width :910px){
+    .gallery__choices a{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    .nav__menu{
+        display: none;
+    }
+    .register{
+        display: none;
+    }
+   
+    .menu__bars button {
+        display: inline-block;
+    }
+    .menu__bars .uil uil-times ::before{
+        display: none;
+
+    }
+    .footer__container{
+        display: block;
+        gap: 1rem;
+    }
+    .footer__menu,.footer__socials{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+
+
+}
+
 /* ==============MEDIA QUERIES AND SCREEN ============================ */
 
 @media screen and (max-width :450px){
@@ -286,19 +326,19 @@ footer *{
         display: none;
 
     }
-
-
-}
-
-
-
-/* ==============MEDIA QUERIES AND SCREEN ============================ */
-
-@media screen and (max-width :800px){
-    .gallery__choices a{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+    .footer__container{
+        display: block;
         gap: 1rem;
+    }
+    .footer__menu,.footer__socials{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-top: 2rem;
     }
 
 }
+
+
+
