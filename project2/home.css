@@ -284,13 +284,8 @@
         display: grid;
         grid-template-columns: 1fr ;
     }
-    /* .gallery{
-        display: grid;
-        grid-template-columns: 1fr ;
-    } */
+
     .gallery__container{
-        /* display: grid;
-        grid-template-columns: 1fr ; */
         padding: 0;
     }
     .upper__gallery {
