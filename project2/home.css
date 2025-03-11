@@ -335,6 +335,9 @@
     h3{
         font-size: 0.8rem;
     }
+    .btn.primary {
+        margin-right: 0.3rem;
+    }
     
     .container {
         width: var(--container-w-md);
@@ -344,6 +347,9 @@
     .hero__section{
         display: grid;
         grid-template-columns: 1fr ;
+    }
+    .hero__texts p{
+        font-size: 1rem;
     }
     .gallery__container{
         padding: 0;
