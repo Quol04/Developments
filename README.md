@@ -17,7 +17,7 @@ and I am still working on it. It has four folders for now.
 ## Useful Links for Navigations
 
 | Week | Topic | Milestone |
-
+| ------ |------ | ------- |
 |1 |Nav Bar Section | 1-3 |
 |2 |Header Section | 1-4 |
 |3 |About Section |1-3 |
