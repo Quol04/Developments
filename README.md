@@ -14,7 +14,9 @@ and I am still working on it. It has four folders for now.
 
 [images](./images/logo.png)
 
-## Useful Links for Navigations
+## Useful Links for Navigation
+
+## Milestones
 
 | Week | Topic | Milestone |
 | ------ |------ | ------- |
