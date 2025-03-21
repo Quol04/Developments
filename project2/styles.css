@@ -341,6 +341,9 @@ footer *{
         gap: 1rem;
         margin-top: 2rem;
     }
+    .footer__menu{
+        font-size: 1rem;
+    }
 
 }
 
