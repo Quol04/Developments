@@ -20,9 +20,9 @@ and I am still working on it. It has four folders for now.
 
 | Week | Topic | Milestone |
 | ------ |------ | ------- |
-|1 |Nav Bar Section | 1-3 |
-|2 |Header Section | 1-4 |
-|3 |About Section |1-3 |
-|4 |Gallery section|1-5 |
-|5 | Community | 5 |
-|6 |Footer | 1-3|
+|1 | Nav Bar Section | 1-3 |
+|2 | Header Section | 3-4 |
+|3 | About Section | 4-5 |
+|4 | Gallery section|5-7 |
+|5 | Community | 7-8 |
+|6 |Footer | 8-9|
