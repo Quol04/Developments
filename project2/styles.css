@@ -178,8 +178,6 @@ nav{
 }
 
 .register a{
-    box-shadow: 0 0.5rem 0 rgba(0, 0,0, 0.4);
-    /* font-size: 1.3rem; */
     border-radius: var(--radius-3);
     padding: 0.9rem;
 
