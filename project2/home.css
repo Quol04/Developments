@@ -26,6 +26,10 @@
 .hero__section img{
     border-radius: var(--radius-4);
 }
+.hero__button{
+    display: flex;
+    gap: 1rem;
+}
 
 
 
