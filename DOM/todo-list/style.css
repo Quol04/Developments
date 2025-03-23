@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   font-family: 'Poppins', sans-serif;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   background: gray;
+   /* background: url() no-repeat center center/cover; */
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+}
+.todo-app{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+    gap: 30px;
+    color: #000;
+    border-radius: 20px;
+    box-shadow: 0 0 100px rgba(0,0,0,0.5);
+    border: 3px solid rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(10px);
+}
+.todo-app h2{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #000;
+}
+
+.stat-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.18);
+}
+.details{
+    width: 100%;
+}
+
+.details h3{
+    color: #fff;
+}
+
+#progressbar{
+    width: 100%;
+    height: 7px;
+    border-radius: 20px;
+    background: rgba(255, 194, 209, 0.3);
+    position: relative;
+    margin-top: 15px;
+}
+#progress{
+    width: 50%;
+    height: 100%;
+    border-radius: 20px;
+    background: #ff6f91;
+    transition: width 0.3s ease;
+}
+
+#numbers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #ff6f91;
+    border: 2px solid rgba(255, 194, 209, 0.3);
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.2rem;
+    
+}
+
+.input-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+.input-area input{
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 22px;
+    background: rgba(255, 194, 209, 0.3);
+    color: #dbdbdb;
+}
+.input-area button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 10px; */
+    padding: 8px;
+    font-size: 1.1rem;
+    border-radius: 50%;
+    background: rgba(255, 194, 209, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.18);
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.input-area button:hover{
+    transform: scale(1.1);
+    background: #ff6f91;
+}
+.todos-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* border-radius: 10px;
+    background: rgba(255, 194, 209, 0.3); */
+}
+#task-list{
+    width: 100%;
+    
+}
+#task-list li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 10px;
+    margin-bottom: 10px ;
+    border-radius: 30px;
+    background: rgba(255, 194, 209, 0.3);
+    color: #000;
+    font-size: 1.2rem;
+    list-style: none;
+    position: relative;
+    transition: box-shadow 0.3s ease;
+}
+#task-list li:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+#task-list li .checkbox{
+    min-width: 20px;
+    height: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    background:transparent;
+    appearance: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+#task-list li .checkbox:checked{
+    background: #ff6f91;
+    transform: scale(1.1);
+}
+
+#task-list li .checkbox:checked ::before{
+    content: '\2713';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1rem;
+
+}
+#task-list li span{
+    flex: 1;
+    margin-left: 10px;
+    word-wrap: break-word;
+  
+}
+.task-buttons{
+    display: flex;
+    gap: 10px;
+    margin-right: auto;
+}
+.task-buttons button{
+    /* padding: 5px; */
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background: rgba(255, 194, 209, 0.3);
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.task-buttons button:hover{
+    transform: scale(1.2);
+}
+.task-buttons .edit-btn{
+    background: #ffbf00;
+}
+.task-buttons .delete-btn{
+    background: #ff6f91;
+}
