@@ -9,7 +9,7 @@ body{
    justify-content: center;
    align-items: center;
    min-height: 100vh;
-   background: gray;
+   background: rgb(36, 92, 85);
    /* background: url() no-repeat center center/cover; */
 
 }
