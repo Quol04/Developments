@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', ()=> {
     const taskInput = document.querySelector('#task-input');
     const addTaskBtn = document.querySelector('#add-task-btn');
