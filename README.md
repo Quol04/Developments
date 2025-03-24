@@ -8,7 +8,7 @@ and I am still working on it. It has four folders for now.
 ## Authored By:
 
 **Author;**
-[Quol Peter](https://github.com/quol04)
+[Quol Peter](https://github.com/quol04).
 
 ## Resources to use:
 
