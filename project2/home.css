@@ -252,11 +252,22 @@
     cursor: pointer;
 
 }
+.question_head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
 
 .questions p{
-    display: none;
+    /* display: none; */
     border-top: 1px solid ;
-    padding-top: 0.5rem;
+    padding: 0.5rem 1.2rem;
+    background-color: var(--color-primary);
+    /* color: #ffffff; */
+    border-radius: 0 0 2rem 2rem;
+    height: 4.2rem;
+
 
 }
 
