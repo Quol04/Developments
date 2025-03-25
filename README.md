@@ -16,7 +16,7 @@ and I am still working on it. It has four folders for now.
 
 ## Useful Links for Navigation:
 
-## Milestones
+## Milestones:
 
 | Week | Topic | Milestone |
 | ------ |------ | ------- |
