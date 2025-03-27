@@ -156,10 +156,10 @@
 }
 
 .join__us{
-    background: url(./images/med9.jpg) center center/cover;
+    background: url(./images/med9.jpg) center center/cover ;
     margin: 3rem 0;
     height: 15rem;
-    opacity: 0.9;
+    /* opacity: 0.5; */
     
 }
 
