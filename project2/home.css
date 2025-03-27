@@ -9,7 +9,7 @@
 }
 .hero{
     background: linear-gradient(white,#ebf7f4 );
-    /* background:#ebf7f4 ; */
+   
 }
 .hero__texts h2{
     margin-bottom: 1.5rem;
@@ -159,7 +159,6 @@
     background: url(./images/med9.jpg) center center/cover ;
     margin: 3rem 0;
     height: 15rem;
-    /* opacity: 0.5; */
     
 }
 
@@ -264,11 +263,8 @@
     border-top: 1px solid ;
     padding: 0.5rem 1.2rem;
     background-color: var(--color-primary);
-    /* color: #ffffff; */
     border-radius: 0 0 2rem 2rem;
     height: 4.2rem;
-
-
 }
 
 
@@ -309,7 +305,6 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
-        /* align-items: center; */
         justify-content: space-between;
        
     }
