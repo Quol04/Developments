@@ -156,7 +156,7 @@
 }
 
 .join__us{
-    background: url(./images/med9.jpg) center center/cover ;
+    background: url(./images/med9.jpg) center center/cover  ;
     margin: 3rem 0;
     height: 15rem;
     
@@ -259,7 +259,7 @@
 }
 
 .questions p{
-    display: none;
+    /* display: none; */
     border-top: 1px solid ;
     padding: 0.5rem 1.2rem;
     background-color: var(--color-primary);
@@ -285,6 +285,15 @@
     }
     h3{
         font-size: 0.8rem;
+    }
+    .closed-bar{
+        display: none;
+    }
+    .open-bar{
+        display: block;
+    }
+    .menu__bars{
+        margin: 0 1rem;
     }
     
     .container {
