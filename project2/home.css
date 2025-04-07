@@ -343,7 +343,7 @@
 
 /* ==============MEDIA QUERIES AND SCREEN ============================ */
 
-@media screen and (max-width :450px){
+@media screen and (max-width :506px){
 
     h1{
         font-size: 1.8rem;
