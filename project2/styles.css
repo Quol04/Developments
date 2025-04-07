@@ -167,6 +167,9 @@ nav{
 .nav__menu .active{
     color: #fffff3;
 }
+.nav__menu .active:hover{
+    color: #000;
+}
 
 .register{
     display: flex;
@@ -287,7 +290,8 @@ footer *{
         display: none;
     }
     .register{
-        display: none;
+        /* display: none; */
+        padding: 0.5rem;
     }
    
     .menu__bars button {
@@ -313,7 +317,7 @@ footer *{
 
 /* ==============MEDIA QUERIES AND SCREEN ============================ */
 
-@media screen and (max-width :450px){
+@media screen and (max-width :506px){
     .nav__menu{
         display: none;
     }
