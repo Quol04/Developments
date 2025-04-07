@@ -1,5 +1,5 @@
 // Nav Menu
-const navMenu=document.querySelector('.nav__content')
+const navMenu=document.querySelector('.menu-bars')
 const navMenuOpen=document.querySelector('.open-bar')
 const navMenuClose=document.querySelector('.close-bar')
 
