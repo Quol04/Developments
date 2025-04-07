@@ -185,10 +185,11 @@ nav{
     padding: 0.9rem;
 
 }
-.menu__bars button{
+.menu__bars {
     display: none;
     font-size: 2rem;
     color: #000000;
+    cursor: pointer;
 
 }
 
@@ -294,7 +295,7 @@ footer *{
         padding: 0.5rem;
     }
    
-    .menu__bars button {
+    .menu__bars {
         display: inline-block;
     }
     .menu__bars .uil uil-times ::before{
@@ -319,7 +320,16 @@ footer *{
 
 @media screen and (max-width :506px){
     .nav__menu{
+        /* display: inline-block; */
+        position: fixed;
+        top: 4rem;
+        right: 2%;
+        flex-direction: column;
+        gap: 0;
+        margin: 1rem 0;
+        width: 15rem;
         display: none;
+        perspective: 200px;
     }
     .register{
         display: none;
