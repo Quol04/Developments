@@ -152,11 +152,12 @@ nav{
     gap: 6rem;
     text-transform: uppercase;
 }
-.nav__menu{
+.nav__menu {
     display: flex;
     gap: 2rem;
     align-items: center;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .nav__menu a:hover{
@@ -185,7 +186,7 @@ nav{
     padding: 0.9rem;
 
 }
-.menu__bars button{
+.menu__bars{
     display: none;
     font-size: 2rem;
     color: #000000;
@@ -294,11 +295,16 @@ footer *{
         padding: 0.5rem;
     }
    
-    .menu__bars button {
+    .menu__bars  {
         display: inline-block;
     }
-    .menu__bars .uil uil-times ::before{
+    #close-menu{
         display: none;
+        cursor: pointer;
+
+    }
+    #open-menu{
+        cursor: pointer;
 
     }
     .footer__container{
