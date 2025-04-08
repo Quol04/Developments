@@ -287,11 +287,29 @@ footer *{
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
     }
-    .nav__menu{
+    
+    .nav__menu {
+        position: fixed;
+        top: 4rem;
+        right: 2%;
+        flex-direction: column;
+        gap: 0;
+        margin: 1rem 0;
+        width: var(--container-w-md);
         display: none;
+        perspective: 200px;
+      
+    }
+    .nav__menu a{
+          background: var(--color-green-200);
+          color: var(--color-green-900);
+          height: 6rem;
+          display: grid;
+          place-items: center;
+          width: 100%;  
+
     }
     .register{
-        /* display: none; */
         padding: 0.5rem;
     }
    
@@ -331,26 +349,10 @@ footer *{
         display: none;
     }
     .nav__menu {
-        position: fixed;
-        top: 4rem;
-        right: 2%;
-        flex-direction: column;
-        gap: 0;
-        margin: 1rem 0;
-        width: var(--container-w-md);
-        display: none;
-        perspective: 200px;
-      
+        width: 100%;
+       
     }
-    .nav__menu a{
-          background: var(--color-green-200);
-          color: var(--color-green-900);
-          height: 6rem;
-          display: grid;
-          place-items: center;
-          width: 100%;  
 
-    }
    
     .menu__bars button {
         display: inline-block;
