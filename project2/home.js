@@ -1,26 +1,34 @@
-// Nav Menu
-const navMenu=document.querySelector('.menu-bars')
-const navMenuOpen=document.querySelector('.open-bar')
-const navMenuClose=document.querySelector('.close-bar')
 
+//variables declaration
+const navlinks=document.querySelector('.nav__menu')
+const navMenuOpen=document.querySelector('#open-menu')
+const navMenuClose=document.querySelector('#close-menu')
+const navMenuItem=document.querySelectorAll('.nav__menu a')
+
+
+//if the user clicks navlinks <a> tag then close the menu
+//open the menu when the hamburger icon is clicked
 navMenuOpen.addEventListener('click',()=>{
-    navMenu.style.display='flex'
+    navlinks.style.display='flex'
     navMenuOpen.style.display='none'
     navMenuClose.style.display='inline-block'
-});
-
-
-
-// FAQS section 
-const faqs = document.querySelectorAll('.questions');
-const ans = document.querySelector('.questions p');
-
-faqs.forEach(ans => {
-    ans.addEventListener('click', () => {
-        ans.classList.toggle("active");
-        console.log(ans.classList.toggle("active"));
+    
+    navMenuItem.forEach(item => {
+      item.addEventListener('click', () => {
+        navlinks.style.display = 'none';          // Hide the menu
+        navMenuOpen.style.display = 'inline-block'; // Show the hamburger icon
+        navMenuClose.style.display = 'none';      // Hide the close icon
+      });
     });
-});
+   
+})
+//close the menu when the close icon is clicked
+
+navMenuClose.addEventListener('click',()=>{
+    navlinks.style.display='none'
+    navMenuOpen.style.display='inline-block'
+    navMenuClose.style.display='none'
+})
 
 
 
