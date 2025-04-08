@@ -5,6 +5,8 @@ This is my website for practice. Built on,
 #### 10/02/2025.
 and I am still working on it. It has four folders for now.
 
+---
+
 ## Authored By:
 
 **Author;**
@@ -13,6 +15,8 @@ and I am still working on it. It has four folders for now.
 ## Resources to use:
 
 [images](./images/logo.png)
+
+---
 
 ## Useful Links for Navigation:
 
