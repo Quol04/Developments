@@ -33,7 +33,7 @@ navMenuClose.addEventListener('click',()=>{
 
 // Frequently asked questions
 //toggle the FAQ section when clicked
-const faqs=document.querySelectorAll('.faq')
+const faqs=document.querySelectorAll('.questions')
 faqs.forEach(faq => {
     faq.addEventListener('click',() =>{
         faq.classList.toggle('show')
