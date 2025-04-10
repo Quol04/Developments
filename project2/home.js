@@ -31,6 +31,20 @@ navMenuClose.addEventListener('click',()=>{
 })
 
 
+// Frequently asked questions
+//toggle the FAQ section when clicked
+const faqs=document.querySelectorAll('.faq')
+faqs.forEach(faq => {
+    faq.addEventListener('click',() =>{
+        faq.classList.toggle('show')
+        if(faq.classList.contains('show')){
+            faq.querySelector('i').className= 'uil uil-angle-up'
+        }else{
+             faq.querySelector('i').className= 'uil uil-angle-down'
+        }
+    })
+})
+
 
 
 
