@@ -33,17 +33,34 @@ navMenuClose.addEventListener('click',()=>{
 
 // Frequently asked questions
 //toggle the FAQ section when clicked
-const faqs=document.querySelectorAll('.questions')
+const faqs=document.querySelectorAll('.question_head')
+const faqAnswers=document.querySelectorAll('.question p')
+
+// if the user clicks the faqs section then show the faqAnswers
+// and change the icon from down arrow to up arrow
+// and vice versa
 faqs.forEach(faq => {
     faq.addEventListener('click',() =>{
-        faq.classList.toggle('show')
-        if(faq.classList.contains('show')){
-            faq.querySelector('i').className= 'uil uil-angle-up'
-        }else{
-             faq.querySelector('i').className= 'uil uil-angle-down'
-        }
+        faqAnswers.forEach(answer => {
+            answer.style.display='block'
+        })
+        faqAnswers[Array.from(faqs).indexOf(faq)].style.display='block'
+        faq.querySelector('i').classList.toggle('uil-angle-up')
+        faq.querySelector('i').classList.toggle('uil-angle-down')
     })
 })
+
+// faqs.forEach(faq => {
+//     faq.addEventListener('click',() =>{
+//         faq.style.display='block'
+//         if(faq.classList.contains('show')){
+//             faq.querySelector('i').className= 'uil uil-angle-up'
+//         }else{
+
+//              faq.querySelector('i').className= 'uil uil-angle-down'
+//         }
+//     })
+// })
 
 
 
