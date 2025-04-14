@@ -10,7 +10,7 @@ body{
    align-items: center;
    min-height: 100vh;
    background: rgb(36, 92, 85);
-   /* background: url() no-repeat center center/cover; */
+   
 
 }
 
@@ -74,7 +74,7 @@ body{
     width: 50%;
     height: 100%;
     border-radius: 20px;
-    background: #ff6f91;
+    background: #700b22;
     transition: width 0.3s ease;
 }
 
@@ -133,8 +133,7 @@ body{
     align-items: center;
     justify-content: center;
     width: 100%;
-    /* border-radius: 10px;
-    background: rgba(255, 194, 209, 0.3); */
+   
 }
 #task-list{
     width: 100%;
@@ -193,7 +192,6 @@ body{
     margin-right: auto;
 }
 .task-buttons button{
-    /* padding: 5px; */
     border: none;
     border-radius: 50%;
     width: 30px;
