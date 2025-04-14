@@ -14,7 +14,7 @@ and I am still working on it. It has four folders for now.
 
 ## Resources to use:
 
-[images](./images/logo.png)
+[images](./images/logo.png) :
 
 ---
 
@@ -27,6 +27,6 @@ and I am still working on it. It has four folders for now.
 |1 | Nav Bar Section | 3 |
 |2 | Header Section | 3-4 |
 |3 | About Section | 4 |
-|4 | Gallery section|5-6 |
+|4 | Gallery section|3-4 |
 |5 | Community | 3-5 |
 |6 |Footer | 2-3|
