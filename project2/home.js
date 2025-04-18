@@ -41,12 +41,12 @@ const faqAnswer=document.querySelector('.questions p');
 faqQuestion.addEventListener('click',()=>{
     if(faqAnswer.style.display==='none' ){
         faqAnswer.style.display='inline-block'
-        faqQuestion.classList.add('uil-angle-up')
-        faqQuestion.classList.remove('uil-angle-down')
+        // faqQuestion.classList.add('uil-angle-up')
+        // faqQuestion.classList.remove('uil-angle-down')
     }else{
         faqAnswer.style.display='none'
-        faqQuestion.classList.remove('uil-angle-down')
-        faqQuestion.classList.add('uil-angle-up')
+        // faqQuestion.classList.add('uil-angle-down')
+        // faqQuestion.classList.remove('uil-angle-up')
         
     }
 });
