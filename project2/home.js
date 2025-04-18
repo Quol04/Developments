@@ -32,7 +32,25 @@ navMenuClose.addEventListener('click',()=>{
 
 
 // Frequently asked questions
-//toggle the FAQ section when clicked
+//display the faqAnswer section when clicked the faqQuestion section
+//hide the faqAnswer section when clicked the faqQuestion section again
+//change the icon of the faqQuestion section to up when clicked and vice versa
+const faqQuestion=document.querySelector('.question_head');
+const faqAnswer=document.querySelector('.questions p');
+
+faqQuestion.addEventListener('click',()=>{
+    if(faqAnswer.style.display==='none' ){
+        faqAnswer.style.display='inline-block'
+        faqQuestion.classList.add('uil-angle-up')
+        faqQuestion.classList.remove('uil-angle-down')
+    }else{
+        faqAnswer.style.display='none'
+        faqQuestion.classList.remove('uil-angle-down')
+        faqQuestion.classList.add('uil-angle-up')
+        
+    }
+});
+
 
 
 
