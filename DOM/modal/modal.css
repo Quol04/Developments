@@ -11,6 +11,7 @@
     z-index: 10;
     width: 500px;
     max-width: 80%;
+    transition: 200ms ease-in-out;
 }
 .modal-header{
     display: flex;
@@ -50,4 +51,9 @@
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
     pointer-events: none;
+    transition: 200ms ease-in-out;
+}
+#overlay.active{
+    pointer-events: all;
+    opacity: 1;
 }
