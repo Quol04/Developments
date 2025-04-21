@@ -1,10 +1,19 @@
+.open-btn{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 
 .modal{
     position: fixed;
     top: 50%;
     left: 50%;
     background-color: rgba(177, 175, 175, 0.5);
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(0);
     border: 1px solid black;
     border-radius: 10px;
     padding: 20px;
@@ -12,6 +21,10 @@
     width: 500px;
     max-width: 80%;
     transition: 200ms ease-in-out;
+}
+.modal.active{
+    transform: translate(-50%, -50%) scale(1);
+    /* pointer-events: all; */
 }
 .modal-header{
     display: flex;
