@@ -1,3 +1,10 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 20px;
+}
+
 .open-btn{
     background-color: #4CAF50;
     color: white;
