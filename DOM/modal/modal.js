@@ -10,6 +10,7 @@ openModalButtons.forEach((button) => {
   });
 });
 
+
 overlay.addEventListener("click", () => {
   const modals = document.querySelectorAll(".modal.active");
   modals.forEach((modal) => {
@@ -25,12 +26,13 @@ closeModalButtons.forEach((button) => {
   });
 });
 
+
 function openModal(modal) {
   if (modal == null) return;
   modal.classList.add("active");
-  overlay.classList.add("active");
-//   document.body.style.overflow = "hidden"; // Prevent scrolling
+  overlay.classList.add("active"); 
 }
+
 
 function closeModal(modal) {
     if (modal == null) return;
