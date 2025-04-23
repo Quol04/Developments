@@ -25,8 +25,8 @@ I am still working on it. It has three folders for now.
 | Week | Topic | Milestone |
 | ------ |------ | ------- |
 |1 | Nav Bar Section | 3 |
-|2 | Header Section | 3-4 |
+|2 | Header Section | 4 |
 |3 | About Section | 4 |
-|4 | Gallery section|3-4 |
-|5 | Community | 3-5 |
-|6 |Footer | 2-3|
+|4 | Gallery section|3|
+|5 | Community | 5 |
+|6 |Footer | 2|
