@@ -17,3 +17,15 @@ input,hr{
     font-size: 1.5rem;
     font-weight: bold;
 }
+.results{
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #18a993;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
