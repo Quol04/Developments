@@ -34,3 +34,35 @@ input,hr{
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
     transition: all 0.3s ease-in-out;
 }
+#yes-button{
+    background-color: #7c37dd;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 15px;
+}
+#yes-button:hover{
+    background-color:  #1ce5c7;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease-in-out;
+}
+#no-button{
+    background-color: #11f724;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 15px;
+}
+#no-button:hover{
+    background-color:  #0e5f53;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease-in-out;
+}
