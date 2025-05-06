@@ -8,6 +8,8 @@ const jsCounter= document.getElementById('js');
 const voterName= document.getElementById('voter-name');
 const warning= document.getElementById('warning');
 
+const finalResult= document.querySelector('.results');
+
 
 
 let voters=[];
@@ -38,3 +40,23 @@ const voteTracker= (countElement) => {
 }
 }
 
+const showResults= () => {
+    if ( voteTracker(jsCounter) >  voteTracker(htmlCounter)){
+        finalResult.innerText= `JavaScript is the winner with ${jsCounter.innerText} votes`;
+        
+    }
+    else if ( voteTracker(jsCounter) <  voteTracker(htmlCounter)){
+        finalResult.innerText= `HTML is the winner with ${htmlCounter.innerText} votes`;
+    } else{
+        finalResult.innerText= `It's a tie with ${htmlCounter.innerText} votes each`;
+    }
+}
+
+finalResult.addEventListener('click', showResults);
+const resetPoll= () => {
+    jsCounter.innerText=0;
+    htmlCounter.innerText=0;
+    finalResult.innerText="";
+    voters=[];
+    warning.classList.add('hidden');
+}
