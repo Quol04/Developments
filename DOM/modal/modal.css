@@ -27,11 +27,11 @@ body{
     z-index: 10;
     width: 500px;
     max-width: 80%;
-    transition: 200ms ease-in-out;
+    transition: 500ms ease-in-out;
 }
 .modal.active{
     transform: translate(-50%, -50%) scale(1);
-    /* pointer-events: all; */
+    pointer-events: all;
 }
 .modal-header{
     display: flex;
