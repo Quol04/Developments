@@ -8,7 +8,9 @@ const jsCounter= document.getElementById('js');
 const voterName= document.getElementById('voter-name');
 const warning= document.getElementById('warning');
 
-const finalResult= document.querySelector('.results');
+const finalResultBtn= document.querySelector('.results');
+const finalResult= document.querySelector('#final');
+
 
 
 
@@ -52,7 +54,7 @@ const showResults= () => {
     }
 }
 
-finalResult.addEventListener('click', showResults);
+finalResultBtn.addEventListener('click', showResults);
 const resetPoll= () => {
     jsCounter.innerText=0;
     htmlCounter.innerText=0;
