@@ -58,10 +58,4 @@ const showResults= () => {
 }
 
 finalResultBtn.addEventListener('click', showResults);
-const resetPoll= () => {
-    jsCounter.innerText=0;
-    htmlCounter.innerText=0;
-    finalResult.innerText="";
-    voters=[];
-    warning.classList.add('hidden');
-}
+
