@@ -43,14 +43,17 @@ const voteTracker= (countElement) => {
 }
 
 const showResults= () => {
-    if ( voteTracker(jsCounter) >  voteTracker(htmlCounter)){
-        finalResult.innerText= `JavaScript is the winner with ${jsCounter.innerText} votes`;
+   const jsCounterNum=jsCounter.innerText;
+   const htmlCounterNum= htmlCounter.innerText;
+
+    if ( jsCounterNum >  htmlCounterNum){
+        finalResult.innerText= `JavaScript is the winner with ${jsCounterNum} votes`;
         
     }
-    else if ( voteTracker(jsCounter) <  voteTracker(htmlCounter)){
-        finalResult.innerText= `HTML is the winner with ${htmlCounter.innerText} votes`;
+    else if ( jsCounterNum < htmlCounterNum){
+        finalResult.innerText= `HTML is the winner with ${htmlCounterNum} votes`;
     } else{
-        finalResult.innerText= `It's a tie with ${htmlCounter.innerText} votes each`;
+        finalResult.innerText= `It's a tie with ${htmlCounterNum} votes each`;
     }
 }
 
