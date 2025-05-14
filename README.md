@@ -30,3 +30,4 @@ I am still working on it. It has four folders for now.
 |4 | Gallery section|3|
 |5 | Community | 5 |
 |6 |Footer | 2|
+|7 | Total| 21 |
