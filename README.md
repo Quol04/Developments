@@ -31,3 +31,8 @@ I am still working on it. It has four folders for now.
 |5 | Community | 5 |
 |6 |Footer | 2|
 |7 | Total| 21 |
+
+So it took me 21 days to complete the project
+
+---
+
