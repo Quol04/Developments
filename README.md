@@ -4,7 +4,7 @@ This is my website for practice. Built on,
 
 #### 10/02/2025.
 
-I am still working on it. It has four folders for now.
+I am still working on it. It has three folders and a readme file for now.
 
 ---
 
